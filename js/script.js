@@ -6,9 +6,11 @@
          el: '#app',
          data: {
              msg: 'Hello world!',
-             img: './img/image1.jpg'
+             sitename: 'Vue.js ',
+             //*Aggiungere alla pagina un’immagine, presa anch’essa da un data
+             img: './img/vue_js.jpeg'
          }
      }
  )
 
- //*Aggiungere alla pagina un’immagine, presa anch’essa da un data
+ 
