@@ -8,20 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 <body>
-     <div id="app">
 
+      <!-- App è il nostro container, che  deve essere dichiarato all'interno di Vue -->
+     <div id="app"> 
+ 
          <header>
             <h1> {{msg}} </h1>
-            <h3>Benvenuto sul sito di {{sitename}}!  </h3>
+            <input v-model="name" placeholder="Inserisci il tuo nome" @keyup.enter='name'>
+            <h3>Benvenuto sul sito di {{sitename}},{{name}} !  </h3>
+            <h4>
+                {{message}}
+            </h4>
             <img :src="img" alt="">
          </header>
 
-          <main>
-           
-          </main>
-    
-
+          
+   
      </div>
+     <main id="container">
+       <h3>
+           
+       </h3>
+      </main>
+
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
